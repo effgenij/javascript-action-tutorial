@@ -13,4 +13,4 @@ jobs:
         owner: ${{ github.repository_owner }}
         repo: ${{ github.event.repository.name }}
         pr_number: ${{ github.event.number }}
-        token: ${{ secrets.GITHUB_ACTION_TOKEN  || github.token }}
+        token: ${{secrets.GITHUB_TOKEN}}
