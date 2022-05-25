@@ -8870,9 +8870,9 @@ async function run() {
     const pr_number = core.getInput('pr_number', {required: true});
     const token = core.getInput('token ', {required: true});
 
-    const octokit = new github.getOktokit(token);
+    const octokit = github.getOktokit(token);
 
-    const { data: changedFiles } = await octokit.rest.pull.listFiles({
+    const { data: changedFiles } = await octokit.rest.pulls.listFiles({
       owner,
       repo,
       pull_number: pr_number,
