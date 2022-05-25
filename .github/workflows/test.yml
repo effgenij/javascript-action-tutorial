@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - uses: ./
+    - uses: effgenij/javascript-action-tutorial@main
       with:
         owner: ${{ github.repository_owner }}
         repo: ${{ github.event.repository.name }}
